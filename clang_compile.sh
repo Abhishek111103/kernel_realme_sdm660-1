@@ -10,7 +10,7 @@ BRANCH="$(git rev-parse --abbrev-ref HEAD)"
 export PATH="$(pwd)/clang/bin:$PATH"
 export KBUILD_COMPILER_STRING="$($kernel/clang/bin/clang --version | head -n 1 | perl -pe 's/\((?:http|git).*?\)//gs' | sed -e 's/  */ /g' -e 's/[[:space:]]*$//' -e 's/^.*clang/clang/')"
 export ARCH=arm64
-export KBUILD_BUILD_USER="baibhab"
+export KBUILD_BUILD_USER="Abhishek.s"
 export KBUILD_BUILD_HOST=ubuntu
 # Compile plox
 function compile() {
@@ -30,7 +30,7 @@ function compile() {
 # Zipping
 function zipping() {
     cd AnyKernel || exit 1
-    zip -r9 Stormbreaker-RMX1801-EAS-${TANGGAL}.zip *
+    zip -r9 Kratos-HMP-1.0-${TANGGAL}.zip *
     cd ..
 }
 compile
