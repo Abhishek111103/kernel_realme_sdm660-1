@@ -30,7 +30,7 @@ function compile() {
 # Zipping
 function zipping() {
     cd AnyKernel || exit 1
-    zip -r9 Kratos-HMP-1.0-${TANGGAL}.zip *
+    zip -r9 Kratos-HMP-1.1-${TANGGAL}.zip *
     cd ..
 }
 compile
