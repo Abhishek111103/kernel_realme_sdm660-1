@@ -1,7 +1,7 @@
 #!/bin/bash
 echo "Cloning dependencies"
 git clone --depth=1 -b master https://github.com/kdrag0n/proton-clang clang
-git clone https://gitlab.com/Baibhab34/AnyKernel3.git -b rmx1801 AnyKernel
+git clone https://github.com/Abhishek111103/AnyKernel -b 1801 AnyKernel 
 echo "Done"
 KERNEL_DIR=$(pwd)
 IMAGE="${KERNEL_DIR}/out/arch/arm64/boot/Image.gz-dtb"
